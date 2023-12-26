@@ -1,0 +1,255 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/space-mono-v13-latin-700.woff2') format('woff2');
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  display: flex;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Space Mono', monospace;
+  background-color: #C5E4E7;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  gap: 87px;
+
+}
+
+input {
+  font-family: inherit;
+  text-align: right;
+
+}
+
+.container {
+  width: 100%;
+  max-width: 920px;
+  display: flex;
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 32px;
+  gap: 48px;
+  box-shadow: 0px 32px 43px 0px rgba(79, 166, 175, 0.20)
+}
+
+.calculate-wrapper {
+  width: 100%;
+  padding: 13px;
+  padding-right: 0;
+}
+
+
+.global-form {
+  color: #5E7A7D;
+}
+
+
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 40px;
+}
+
+.form-label-text {
+  color: #5E7A7D;
+}
+
+.form-label-input {
+  border-radius: 5px;
+  background: #F3F9FA;
+  border: 0;
+  padding-left: 35px;
+  padding-right: 17px;
+  font-size: 24px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  background-image: url('../images/$.svg');
+  background-repeat: no-repeat;
+  background-position: center left 20px;
+
+}
+
+.form-label-input:focus {
+  outline: 2px solid #26C2AE;
+}
+
+.form-tip-wrapper {}
+
+.form-tip-label-text {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.form-tip-select-wrapper {}
+
+.form-tips-grid {
+  columns: 3;
+  margin-bottom: 40px;
+}
+
+
+.form-tip-select-input {
+  display: none;
+}
+
+.form-tip-select-label {
+  display: inline-block;
+  border-radius: 5px;
+  font-size: 24px;
+  padding: 6px 14px;
+  color: white;
+  background: #00474B;
+  flex-grow: 1;
+  text-align: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  margin-bottom: 14px;
+  width: 117px;
+}
+
+.form-tip-select-input:hover~.form-tip-select-label {
+  color: #00474B;
+  background: #26C2AE;
+}
+
+.form-tip-select-input:active~.form-tip-select-label {
+  border-radius: 5px;
+  background: #9FE8DF;
+}
+
+
+
+
+.custom-tip {
+  display: inline-block;
+  width: 117px;
+  padding: 6px 14px;
+  font-size: 24px;
+  border: 0;
+  border-radius: 5px;
+  /* text-align: center; */
+}
+
+.custom-tip:focus {
+  outline: 2px solid #26C2AE;
+}
+
+.bottom {
+  background-image: url('../images/Combined\ Shape.svg');
+  background-repeat: no-repeat;
+  background-position: center left 20px;
+}
+
+.bottom:focus {
+  outline: 2px solid #E17052;
+}
+
+.form-label-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+
+.result-wrapper {
+  width: 100%;
+  padding: 40px;
+  border-radius: 15px;
+  background: #00474B;
+}
+
+.result-wrapper-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.result-wrapper-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 122px;
+}
+
+
+.result-wrapper-title {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.result-wrapper-text {
+  color: #7F9D9F;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.result-wrapper-number {
+  color: #26C2AE;
+  text-align: right;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.result-wrapper-button {
+  border-radius: 5px;
+  text-transform: uppercase;
+  background-color: #26C2AE;
+  color: #00474B;
+  text-align: center;
+  width: 333px;
+  height: 48px;
+  padding: 9px 40px;
+  font-size: 20px;
+  font-weight: 700;
+  border: 0;
+}
+
+.result-wrapper-button:active {
+  background: #9FE8DF;
+}
